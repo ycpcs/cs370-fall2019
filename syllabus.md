@@ -11,7 +11,7 @@ CS 370 - Computer Graphics Programming I
 Class times:
 
 - Section 101, T/Th 12:30 - 1:45PM in KEC 123
-- Section 102, T/Th 2:00A - 3:15PM in KEC 123
+- Section 102, T/Th  2:00 - 3:15PM in KEC 123
 
 Instructor:
 
@@ -30,7 +30,7 @@ CS201 – Fundamentals of Computer Science II - with a grade of 2 or better
 Required Textbook
 -----------------
 
-Angel. [OpenGL: A Primer – 3nd Edition.](http://www.pearsonhighered.com/educator/product/OpenGL-A-Primer/9780321398116.page) Addison-Wesley, 2008.
+Angel. [OpenGL: A Primer – 3rd Edition.](http://www.pearsonhighered.com/educator/product/OpenGL-A-Primer/9780321398116.page) Addison-Wesley, 2008.
 
 Supplemental Resources
 ----------------------
