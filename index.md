@@ -33,4 +33,3 @@ All information about the course will be posted here.
 * **Nov 26** - [Final Project](assign/project.html), Milestone 2 Demo.
 * **Nov 28** - NO CLASS - Thanksgiving Break.
 * **Dec 12/14 -** [FINAL PROJECT](assign/project.html) **DUE.**
--->
