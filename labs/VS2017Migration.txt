@@ -1,0 +1,7 @@
+Visual Studio 2017 migration
+
+Project properties:
+General -> Character Set -> Use Unicode Character Set
+C/C++ -> SDL checks -> (empty)
+C/C++ -> Preprocessor Definitions -> WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)
+C/C++ -> Language-> Conformance mode -> No
