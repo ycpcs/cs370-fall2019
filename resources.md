@@ -37,6 +37,14 @@ From a terminal window
 $ sudo apt-get install freeglut3-dev
 ```
 
+**Linux (centos)**
+
+From a terminal window
+
+```cpp
+$ sudo yum install freeglut-devel.x86_64
+```
+
 **Mac OSX**
 
 Install **XCode** from the App Store. 
@@ -69,6 +77,26 @@ From a terminal window
 ```cpp
 $ sudo apt-get install libsoil-dev
 ```
+	
+**Linux (centos)**
+
+1.  Download the [linux header](soil/centos/SOIL.h).
+
+2.  In a terminal window, from the directory where you downloaded the header file:
+
+	```cpp
+	$ sudo mkdir /usr/local/include/SOIL
+	
+	$ sudo cp SOIL.h /usr/local/include/SOIL/
+	```
+
+3.  Download [libSOIL.a](soil/centos/libSOIL.a).
+
+4.  In a terminal window, from the directory where you downloaded the library:
+
+	```cpp
+	$ sudo cp libSOIL.a /usr/local/lib/
+	```
 	
 **Mac OSX**
 
@@ -115,6 +143,14 @@ From a terminal window
 
 ```cpp
 $ sudo apt-get install libglew-dev
+```
+
+**Linux (centos)**
+
+From a terminal window
+
+```cpp
+$ sudo yum install glew-devel.x86_64
 ```
 
 **Mac OSX**
