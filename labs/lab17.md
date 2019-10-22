@@ -128,21 +128,23 @@ Like quadrics, GLUT also provides many common objects such as spheres, cones, to
 5\. Depth Test and Alpha Blending
 =================================
 
-Normally we simply enable the depth test in order to perform hidden surface removal such that the closest object is the one that appears in the final scene. However since alpha blending occurs in the *fragment processor* if the depth test is enabled when translucent objects are rendered, they may be clipped before reaching the fragment processor. Hence whenever a translucent object is rendered, the depth test must be temporarily disabled using:
+Normally we simply enable the depth test in order to perform hidden surface removal such that the closest object is the one that appears in the final scene, which is correct if a translucent object is *behind* an opaque object. However since alpha blending occurs in the *fragment processor* if the depth test is enabled when multiple translucent objects are rendered that are *in front* of an opaque object, some may be clipped before reaching the fragment processor unless a back to front rendering order can be guaranteed. Hence whenever a translucent object is rendered, we will temporarily disable **updating** of the depth buffer (note: this does not disable the depth test) using:
 
 ```cpp
 glDepthMask(GL_FALSE);
 ```
 
-After rendering the translucent object, the depth test should be re-enabled to allow proper rendering of subsequent opaque objects. This is simply done using
+After rendering all the translucent objects, updating the depth buffer should be re-enabled to allow proper rendering of subsequent objects. This is simply done using
 
 ```cpp
 glDepthMask(GL_TRUE);
 ```
 
+Hence the typical process will be to render all **opaque** objects first, then disable updating the depth buffer while rendering all **translucent** objects, and finally reenable updating of the depth buffer.
+
 **Tasks**
 
--   Add code to **render\_scene( )** to disable/re-enable the depth test for the **red-acrylic** cylinder. What happens if you do not disable this or forget to re-enable it?
+-   Add code to **render\_scene( )** to disable/re-enable the depth test for the **red-acrylic** cylinder. What happens if you do not disable this or forget to re-enable it? What happens if you render the cylinder *before* the torus and sphere?
 
 Compiling and running the program
 =================================

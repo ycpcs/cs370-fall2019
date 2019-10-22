@@ -63,7 +63,7 @@ update_base();              		// Set initial transformation matrix
 
     > -   **Base** - Make the material **brass**, use the **draw\_base( )** function, and set the shader program to **lightShaderProg** (since this object will use lighting).
     > -   **Lower Arm** - Set the color to (1.0f,0.0f,0.0f,1.0f), use the **draw\_lower\_arm( )** function, and set the shader program to **defaultShaderProg** (since this object will not use lighting).
-    > -   **Upper Arms** - Do not set a color, use the **draw\_upper\_arm( )** function for both, and set the shader program to **defaultShaderProg** for both (again they will not use lighting).
+    > -   **Upper Arms** - Do not set the color for the nodes as it is set in the draw function used for both arms, use the **draw\_upper\_arm( )** function for both, and set the shader program to **defaultShaderProg** for both (again they will not use lighting).
     >
     > Set empty node pointers to **NULL** and remember to use **&** to set the *address* of a connecting node to the pointer.
 
